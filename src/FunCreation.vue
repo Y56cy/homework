@@ -17,15 +17,15 @@
 
 </template>
 <script setup>
-import Nav from '../components/Nav.vue';
-import Sakura from '../components/Sakura.vue'; 
-import Header from '../components/Header.vue';
+import Nav from './components/Nav.vue';
+import Sakura from './components/Sakura.vue'; 
+import Header from './components/Header.vue';
 import { ref } from 'vue';
 
-import qian1Image from '../assets/images/qian1.jpg'; 
+import qian1Image from './assets/images/ghost_princess3.jpg'; 
 const headerImage = ref(qian1Image);
-import SectionTitle from '../components/SectionTitle.vue';
-import VideoList from '../components/VideoList.vue';
+import SectionTitle from './components/SectionTitle.vue';
+import VideoList from './components/VideoList.vue';
 
 const featuredVideos = ref([
   { id: 1, src: "https://player.bilibili.com/player.html?isOutside=true&aid=113714611095375&bvid=BV1KiCaYDESq&cid=27532397063&p=1&autoplay=0", content: "二十八部宫崎骏经典动漫...", time: "2025-01-12", views: "41.6万" },
