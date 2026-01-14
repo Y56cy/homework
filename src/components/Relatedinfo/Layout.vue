@@ -28,7 +28,7 @@
   display: grid;
   flex: 1; 
   min-width: 300px;
-  background-color: antiquewhite;
+  background-color: rgb(225, 227, 248);
   padding: 20px;
   gap: 1.5rem;
   border-radius: 8px;

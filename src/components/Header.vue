@@ -57,9 +57,8 @@ header {
   text-align: left;
   max-width: 1200px; 
   /* 大屏居中，小屏左对齐 */
-  /* margin-left: 2rem; 和 margin: 0 auto 0 2rem; 可能会冲突，我们简化一下 */
   margin: 0 auto; /* 先让整个 header 容器居中 */
-  padding-left: 2rem; /* 确保标题文字有左边距 */
+  margin-left: 2rem; /* 确保标题文字有左边距 */
   box-sizing: border-box; /* 确保 padding 不会超出 max-width */
 }
 
