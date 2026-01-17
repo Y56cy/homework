@@ -9,7 +9,7 @@
 </template>
 <style scoped>
     h2{
-        color: darkblue;
+        color: rgb(255, 255, 255);
         }
     header {
         background: 

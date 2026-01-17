@@ -1,12 +1,12 @@
 <template>
     <nav class="navbar">
         <ul class="nav-menu">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">作品</a></li>
-            <li><a href="#">作者</a></li>
-            <li><a href="#">二创</a></li>
-            <li><a href="#">相关资讯</a></li>
-            <li><a href="#">精美图片</a></li>
+            <li><router-link to="/" style="margin: 0 15px; font-size: 18px;">首页</router-link></li>
+            <li><router-link to="/Author" style="margin: 0 15px; font-size: 18px;">作者</router-link></li>
+          <li><router-link to="/works" style="margin: 0 15px; font-size: 18px;">作品一览</router-link></li>
+            <li><router-link to="/FunCreation" style="margin: 0 15px; font-size: 18px;">二创视频</router-link></li>
+            <li><router-link to="/PicturesPage" style="margin: 0 15px; font-size: 18px;">精美图片</router-link></li>
+            <li><router-link to="/RelatedinfoPage" style="margin: 0 15px; font-size: 18px;">相关资讯</router-link></li>
         </ul>
     </nav>
 </template>

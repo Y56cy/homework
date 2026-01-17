@@ -2,13 +2,14 @@
   <div>
     <Nav />
     <AuthorHeader />
-    <allfooter />
     <div class="container">
       <main>
         <AuthorInformation />
         <AuthorBasic />
+       
       </main>
     </div>
+     <allfooter />
   </div>
 </template>
 
