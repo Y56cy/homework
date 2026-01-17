@@ -1,5 +1,4 @@
 <template>
-  <!-- 页面标题 -->
   <div class="title">宫崎骏动漫网</div>
 </template>
 
