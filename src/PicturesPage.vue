@@ -52,26 +52,30 @@ import ImageGrid from './components/PictureRelated/ImageGrid.vue';
 // --- ImageTextSection 数据 ---
 const contentA = ref("吉卜力工作室自1985年成立以来，创作了无数经典的动画作品，其原画手稿更是艺术的瑰宝。本图集收录了《龙猫》《千与千寻》《天空之城》等经典作品的原版原画，每一张都承载着宫崎骏先生对动画的热爱与执着。");
 const contentB = ref("这些原画不仅展现了吉卜力独有的手绘风格，更能让你感受到动画创作背后的细腻与用心，是动画爱好者不可错过的收藏佳品。");
-
+const getImageUrl = (name) => {
+  return new URL(`./assets/images/${name}`, import.meta.url).href;
+};
 // --- ScrollGallery 数据 ---
 const scrollImages = ref([
-  { url: 'src/assets/images/boniu2.jpg', alt: '图片1' },
-  { url: 'src/assets/images/red_pig3.jpg', alt: '图片2' },
-  { url: 'src/assets/images/qian1.jpg', alt: '图片3' },
-  { url: 'src/assets/images/qifefng3.jpg', alt: '图片4' },
-  { url: 'src/assets/images/monv.jpg', alt: '图片5' },
+  { url: getImageUrl('boniu2.jpg'), alt: '图片1' },
+  { url: getImageUrl('red_pig3.jpg'), alt: '图片2' },
+  { url: getImageUrl('qian1.jpg'), alt: '图片3' },
+  { url: getImageUrl('qifefng3.jpg'), alt: '图片4' },
+  { url: getImageUrl('monv.jpg'), alt: '图片5' },
 ]);
 
 // --- ImageGrid 数据 ---
+
+
 const gridImages = ref([
-  { url: 'src/assets/images/monv.jpg', alt: '魔女' },
-  { url: 'src/assets/images/ghost_princess1.jpg', alt: '幽灵公主1' },
-  { url: 'src/assets/images/ghost_pricess2.jpg', alt: '幽灵公主2' },
-  { url: 'src/assets/images/alikaidi.jpg', alt: '阿里卡迪' },
-  { url: 'src/assets/images/monv1.jpg', alt: '魔女宅急便' },
-  { url: 'src/assets/images/haer1.jpg', alt: '哈尔的移动城堡' },
-  { url: 'src/assets/images/red_pig1.jpg', alt: '红猪' },
-  { url: 'src/assets/images/monv3.jpg', alt: '魔女宅急便3' },
+ { url: getImageUrl('monv.jpg'), alt: '魔女' },
+  { url: getImageUrl('ghost_princess1.jpg'), alt: '幽灵公主1' },
+  { url: getImageUrl('ghost_pricess2.jpg'), alt: '幽灵公主2' }, 
+  { url: getImageUrl('alikaidi.jpg'), alt: '阿里卡迪' },
+  { url: getImageUrl('monv1.jpg'), alt: '魔女宅急便' },
+  { url: getImageUrl('haer1.jpg'), alt: '哈尔的移动城堡' },
+  { url: getImageUrl('red_pig1.jpg'), alt: '红猪' },
+  { url: getImageUrl('monv3.jpg'), alt: '魔女宅急便3' },
 ]);
 </script>
 

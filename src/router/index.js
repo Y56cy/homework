@@ -1,5 +1,5 @@
 // 1. 导入Vue Router的核心方法和你的组件
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 // 导入你写的组件（路径根据自己的文件位置调整）
 import Author from '../Author.vue'      // 首页组件
 import FunCreation from '../FunCreation.vue'     // 关于宫崎骏组件
@@ -43,7 +43,7 @@ const routes = [
 
 // 3. 创建路由实例
 const router = createRouter({
-  history: createWebHistory(),  // 采用HTML5的history模式（URL没有#）
+  history: createWebHashHistory(),  // 采用HTML5的history模式（URL没有#）
   routes                        // 关联上面定义的路由规则
 })
 
