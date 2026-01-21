@@ -12,7 +12,7 @@
       
       <ImageTextSection
         title="吉卜力经典原画集"
-        image-url="src/assets/images/monv1.jpg"
+        :image-url="getImageUrl('monv1.jpg')"
         :content-a="contentA"
         :content-b="contentB"
         button-text="查看完整原画集"
